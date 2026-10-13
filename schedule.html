@@ -3,165 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Schedule &middot; Systematically Developing Software with AI</title>
-<meta name="description" content="The fourteen weeks: lectures, exercises and project milestones.">
+<title>Schedule | Systematically Developing Software with AI</title>
+<meta name="description" content="The fourteen weeks: two lectures and one exercise per week.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-head">
-  <div class="wrap">
-    <h1 class="site-title"><a href="index.html">Systematically Developing Software with AI</a></h1>
-    <p class="site-sub">Bachelor Computer Science &middot; 3rd semester &middot; 14 weeks &middot; lecture and exercise</p>
+  <div class="head-card">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
+      <span class="brand-text">Systematically Developing<br>Software with AI</span>
+    </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="schedule.html" aria-current="page">Schedule</a></li>
-        <li><a href="week5.html">Week 5</a></li>
         <li><a href="exercises.html">Exercises</a></li>
         <li><a href="project.html">Project</a></li>
-        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Schedule</span>
+    <h1>The fourteen weeks</h1>
+  </div>
+</div>
+
+<nav class="wrap crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Course</a><span>&rsaquo;</span>Schedule
+</nav>
+
 <main>
 <div class="wrap">
 
-  <h1><span class="eyebrow">Schedule</span>The fourteen weeks</h1>
 
-  <p class="lede">Four blocks. The first two build the vocabulary, the third walks the lifecycle phase by phase, and the fourth asks what the engineer is accountable for. Each lecture has an exercise, due before the following week, that feeds the semester project.</p>
+  <p class="lede">Two lectures a week (a and b) and one exercise, due before the following week. Week 5, lecture b, is the lecture given in the teaching demonstration.</p>
 
   <table>
-    <caption>Lectures and exercises. Week 5 is the lecture given in the teaching demonstration.</caption>
+    <caption>Lectures and exercises by week.</caption>
     <thead>
       <tr>
         <th scope="col">Week</th>
-        <th scope="col">Lecture</th>
-        <th scope="col">Content</th>
+        <th scope="col">Lecture a</th>
+        <th scope="col">Lecture b</th>
         <th scope="col">Exercise</th>
       </tr>
     </thead>
     <tbody>
 
-      <tr class="block-head"><td colspan="4">Block I &middot; Foundations</td></tr>
+      <tr class="block-head"><td colspan="4">Block I: Software engineering fundamentals</td></tr>
 
       <tr>
         <td class="wk" data-label="Week">1</td>
-        <td data-label="Lecture">Why software engineering has phases. The state of AI in development</td>
-        <td data-label="Content">What the phases are for, and what the adoption claims and the evidence actually say</td>
-        <td data-label="Exercise">Toolchain and first user stories</td>
+        <td data-label="Lecture a">Introduction: why software engineering has phases; the state of AI in development</td>
+        <td data-label="Lecture b">Processes and lifecycle models</td>
+        <td data-label="Exercise">Exercise 1</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">2</td>
-        <td data-label="Lecture">How LLMs work, for engineers</td>
-        <td data-label="Content">Next-token prediction, tokens, context windows, training stages, strengths and limits</td>
-        <td data-label="Exercise">One story, three models</td>
+        <td data-label="Lecture a">Requirements engineering</td>
+        <td data-label="Lecture b">Architecture and design</td>
+        <td data-label="Exercise">Exercise 2</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">3</td>
-        <td data-label="Lecture">Prompting and context engineering. The AI-assisted IDE</td>
-        <td data-label="Content">Modes, indexing, configuration and memory files, and what they change in practice</td>
-        <td data-label="Exercise">Your project's agent configuration</td>
+        <td data-label="Lecture a">Testing and quality</td>
+        <td data-label="Lecture b">Code review, maintenance, CI/CD</td>
+        <td data-label="Exercise">Exercise 3</td>
       </tr>
 
-      <tr class="block-head"><td colspan="4">Block II &middot; Agents</td></tr>
+      <tr class="block-head"><td colspan="4">Block II: LLMs and agents</td></tr>
 
       <tr>
         <td class="wk" data-label="Week">4</td>
-        <td data-label="Lecture">From LLMs to autonomous agents</td>
-        <td data-label="Content">The agent loop, tools and tool calling, memory, skills, MCP</td>
-        <td data-label="Exercise">One feature with a coding agent</td>
+        <td data-label="Lecture a">How LLMs work, for engineers</td>
+        <td data-label="Lecture b">Prompting and context engineering; the AI-assisted IDE</td>
+        <td data-label="Exercise">Exercise 4</td>
       </tr>
       <tr class="here">
         <td class="wk" data-label="Week">5</td>
-        <td data-label="Lecture"><a href="week5.html"><strong>Engineering Agentic Workflows: Patterns, Processes, and Quality</strong></a></td>
-        <td data-label="Content">Workflow or autonomous agent, five common patterns, evaluator and optimizer in depth, a first look at testing with AI</td>
-        <td data-label="Exercise"><a href="week5.html">Choose and apply an agentic workflow pattern</a></td>
+        <td data-label="Lecture a">From LLMs to autonomous agents</td>
+        <td data-label="Lecture b"><strong>Engineering Agentic Workflows: Patterns, Processes, and Quality</strong></td>
+        <td data-label="Exercise"><a href="exercises.html#ex5">Exercise 5: Choose and apply an agentic workflow pattern</a></td>
       </tr>
-
-      <tr class="block-head"><td colspan="4">Block III &middot; Agentic software engineering across the lifecycle</td></tr>
-
       <tr>
         <td class="wk" data-label="Week">6</td>
-        <td data-label="Lecture">Multi-Agent Systems for Software Engineering</td>
-        <td data-label="Content">Roles, topologies and coordination: who decides, who checks, who stops</td>
-        <td data-label="Exercise">Specialized agents and explicit coordination</td>
+        <td data-label="Lecture a">Multi-Agent Systems for Software Engineering</td>
+        <td data-label="Lecture b">Reliability, safety, and evaluation of agentic systems</td>
+        <td data-label="Exercise">Exercise 6</td>
       </tr>
+
+      <tr class="block-head"><td colspan="4">Block III: AI across the software engineering lifecycle</td></tr>
+
       <tr>
         <td class="wk" data-label="Week">7</td>
-        <td data-label="Lecture">Reliability, Safety, and Evaluation of Agentic Systems</td>
-        <td data-label="Content">Evaluating the agentic system itself: criteria, variance, and what an evaluation misses</td>
-        <td data-label="Exercise">A ten-case evaluation</td>
+        <td data-label="Lecture a">AI-assisted requirements engineering</td>
+        <td data-label="Lecture b">Specification-driven development</td>
+        <td data-label="Exercise">Exercise 7</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">8</td>
-        <td data-label="Lecture">AI-Assisted Requirements Engineering</td>
-        <td data-label="Content">Elicitation, specification and traceability when an agent does part of the asking</td>
-        <td data-label="Exercise">Elicitation, twice</td>
+        <td data-label="Lecture a">AI-assisted design and implementation</td>
+        <td data-label="Lecture b">Agent frameworks and tooling</td>
+        <td data-label="Exercise">Exercise 8</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">9</td>
-        <td data-label="Lecture">AI-Assisted Software Design and Implementation</td>
-        <td data-label="Content">Design rationale, architecture decision records, and reviewing code nobody wrote by hand</td>
-        <td data-label="Exercise">Two designs, one ADR</td>
+        <td data-label="Lecture a">Reviewing code nobody wrote by hand</td>
+        <td data-label="Lecture b">Security of AI-generated code</td>
+        <td data-label="Exercise">Exercise 9</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">10</td>
-        <td data-label="Lecture">AI-Driven Software Testing and Quality Assurance</td>
-        <td data-label="Content">Test design from requirements, agentic generation and repair, judging generated tests</td>
-        <td data-label="Exercise">Criteria, tests, and what is missing</td>
+        <td data-label="Lecture a">AI-driven testing and quality assurance</td>
+        <td data-label="Lecture b">Test generation and repair</td>
+        <td data-label="Exercise">Exercise 10</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">11</td>
-        <td data-label="Lecture">AI-Assisted Maintenance and Evolution</td>
-        <td data-label="Content">Program repair, change in a system nobody fully remembers writing</td>
-        <td data-label="Exercise">Verify someone else's patch</td>
+        <td data-label="Lecture a">AI-assisted maintenance and program repair</td>
+        <td data-label="Lecture b">AI DevOps</td>
+        <td data-label="Exercise">Exercise 11</td>
       </tr>
-
-      <tr class="block-head"><td colspan="4">Block IV &middot; Judgement and synthesis</td></tr>
-
       <tr>
         <td class="wk" data-label="Week">12</td>
-        <td data-label="Lecture">Security of AI-generated code, and of agents</td>
-        <td data-label="Content">What static analysis catches, what it does not, and fabricated dependencies</td>
-        <td data-label="Exercise">Security triage</td>
+        <td data-label="Lecture a">Security of agents</td>
+        <td data-label="Lecture b">Human and agent collaboration</td>
+        <td data-label="Exercise">Exercise 12</td>
       </tr>
+
+      <tr class="block-head"><td colspan="4">Block IV: Judgement and synthesis</td></tr>
+
       <tr>
         <td class="wk" data-label="Week">13</td>
-        <td data-label="Lecture">Accountability, intellectual property, the engineering role</td>
-        <td data-label="Content">Approving software on a well-founded belief, and what that requires of you</td>
-        <td data-label="Exercise">The accountability statement</td>
+        <td data-label="Lecture a">Accountability, intellectual property, licensing</td>
+        <td data-label="Lecture b">Course synthesis</td>
+        <td data-label="Exercise">Exercise 13</td>
       </tr>
       <tr>
         <td class="wk" data-label="Week">14</td>
-        <td data-label="Lecture">Synthesis and project presentations</td>
-        <td data-label="Content">Groups present their system and the evidence that it works</td>
+        <td data-label="Lecture a">Project presentations</td>
+        <td data-label="Lecture b">Project presentations</td>
         <td data-label="Exercise">Presentation and reflection</td>
       </tr>
 
     </tbody>
   </table>
 
-  <h2>Project milestones</h2>
-
-  <table>
-    <caption>The semester project runs alongside the lectures from week 1.</caption>
-    <thead>
-      <tr><th scope="col">Milestone</th><th scope="col">Week</th><th scope="col">What is due</th></tr>
-    </thead>
-    <tbody>
-      <tr><td data-label="Milestone"><span class="num">M0</span></td><td data-label="Week">Week 2</td><td data-label="Due">User stories with acceptance criteria, reviewed</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M1</span></td><td data-label="Week">Week 4</td><td data-label="Due">First feature merged, with the full agent transcript</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M2</span></td><td data-label="Week">Week 7</td><td data-label="Due">An evaluated agentic workflow</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M3</span></td><td data-label="Week">Week 10</td><td data-label="Due">Test adequacy argument</td></tr>
-      <tr><td data-label="Milestone"><span class="num">Final</span></td><td data-label="Week">Week 13</td><td data-label="Due">The system and its full evidence package</td></tr>
-      <tr><td data-label="Milestone"><span class="num">Presentations</span></td><td data-label="Week">Week 14</td><td data-label="Due">Group presentation and individual reflection</td></tr>
-    </tbody>
-  </table>
-
-  <p>The <a href="project.html">semester project page</a> describes the five systems and what each milestone asks for.</p>
+  <p>Exercise briefs appear on the <a href="exercises.html">exercises page</a> in the week they are set.</p>
 
 </div>
 </main>

@@ -3,100 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Semester project &middot; Systematically Developing Software with AI</title>
+<title>Semester project | Systematically Developing Software with AI</title>
 <meta name="description" content="The semester group project: five systems to choose from, four milestones, and the final evidence package.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-head">
-  <div class="wrap">
-    <h1 class="site-title"><a href="index.html">Systematically Developing Software with AI</a></h1>
-    <p class="site-sub">Bachelor Computer Science &middot; 3rd semester &middot; 14 weeks &middot; lecture and exercise</p>
+  <div class="head-card">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
+      <span class="brand-text">Systematically Developing<br>Software with AI</span>
+    </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="week5.html">Week 5</a></li>
         <li><a href="exercises.html">Exercises</a></li>
         <li><a href="project.html" aria-current="page">Project</a></li>
-        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Semester project</span>
+    <h1>Semester project</h1>
+  </div>
+</div>
+
+<nav class="wrap crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Course</a><span>&rsaquo;</span>Project
+</nav>
+
 <main>
 <div class="wrap">
 
-  <h1><span class="eyebrow">Semester project</span>One system, built with agents, all semester</h1>
 
-  <p class="lede">Groups of three or four choose one of five systems in week 1 and build it with agents throughout. Deliverables and milestones are identical whichever system you pick, because the exercises are written against "your project's next feature" rather than against a domain. One point is worth saying early: the project is a software system, not an agent. Even the project assistant option goes through requirements, design, implementation, testing and maintenance like the others.</p>
-
-  <h2>The menu</h2>
+  <p class="lede">Teams of three or four choose one of two systems in week 1 and develop it throughout the semester: conventionally in Block I, with AI agents from week 4. The exercises are written against your project's next feature, so the choice does not change what is asked.</p>
 
   <div class="entry">
-    <h3>Home energy assistant</h3>
-    <p>Ingests smart-meter and tariff data, schedules flexible loads such as charging before 07:00 or running the heat pump in the cheap window, and warns on anomalies.</p>
-    <p class="meta">Tariffs and scheduling give crisp acceptance criteria and hard limits, and energy informatics is close to home here.</p>
+    <h3>Option A: Smart campus assistant</h3>
+    <p>Study-room booking, events, and student requests routed to the office that can answer them.</p>
   </div>
 
-  <div class="entry">
-    <h3>Smart campus assistant</h3>
-    <p>Study-room booking, events, and student requests routed to the office that can actually answer them.</p>
-    <p class="meta">Many small features, real stakeholders, and an obvious case for specialized agents.</p>
+  <div class="entry" style="border-bottom:0">
+    <h3>Option B: Sustainable mobility planner</h3>
+    <p>Multimodal journeys around the city, across bus, bike and the semester ticket, with a comparison of the options.</p>
   </div>
 
-  <div class="entry">
-    <h3>Disaster response coordination</h3>
-    <p>Incident reporting, prioritisation and resource coordination for a volunteer organisation.</p>
-    <p class="meta">Conflicting requirements, several distinct workflows, and quality concerns that matter.</p>
-  </div>
+  <hr style="border:0;border-top:1px solid #DDE8EE;margin:0 0 1.5rem">
 
-  <div class="entry">
-    <h3>Sustainable mobility planner</h3>
-    <p>Multimodal journeys around the city, across bus, bike and the Semesterticket, with a comparison of the options.</p>
-    <p class="meta">Realistic external APIs, and requirements that change while you are building.</p>
-  </div>
+  <h2>Deliverable</h2>
 
-  <div class="entry">
-    <h3>Open-source project assistant</h3>
-    <p>A tool that classifies issues, extracts requirements, finds the relevant code, proposes changes and reviews contributions.</p>
-    <p class="meta">AI for software engineering as the subject itself, and the strongest playground for the patterns. It still has to be engineered as software.</p>
-  </div>
-
-  <h2>Milestones</h2>
-
-  <table>
-    <caption>Four checkpoints and a final submission. Each one is the output of that week's exercise, not extra work.</caption>
-    <thead>
-      <tr><th scope="col">Milestone</th><th scope="col">Week</th><th scope="col">What is due</th></tr>
-    </thead>
-    <tbody>
-      <tr><td data-label="Milestone"><span class="num">M0</span></td><td data-label="Week">Week 2</td><td data-label="Due">User stories with acceptance criteria, reviewed. The group and the project are fixed.</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M1</span></td><td data-label="Week">Week 4</td><td data-label="Due">First feature merged, with the full agent transcript.</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M2</span></td><td data-label="Week">Week 7</td><td data-label="Due">An agentic workflow for one of your own tasks, evaluated, with pass rate and variance.</td></tr>
-      <tr><td data-label="Milestone"><span class="num">M3</span></td><td data-label="Week">Week 10</td><td data-label="Due">Test adequacy argument: which criterion is covered by which evidence, and which has none.</td></tr>
-      <tr><td data-label="Milestone"><span class="num">Final</span></td><td data-label="Week">Week 13</td><td data-label="Due">The system and the full evidence package, below.</td></tr>
-      <tr><td data-label="Milestone"><span class="num">Presentations</span></td><td data-label="Week">Week 14</td><td data-label="Due">Group presentation and individual reflection.</td></tr>
-    </tbody>
-  </table>
-
-  <h2>The final deliverable</h2>
-
-  <p>The running system, and with it:</p>
-
-  <div class="box">
-    <ul class="plain">
-      <li><span class="num">1</span> <strong>Specification with acceptance criteria.</strong> What the system was asked to do, written so it can be checked.</li>
-      <li><span class="num">2</span> <strong>Test adequacy argument.</strong> Which criterion is covered by which evidence, and which criteria have none.</li>
-      <li><span class="num">3</span> <strong>Review and evaluation record.</strong> What was reviewed, by whom or by what, and what the evaluation found.</li>
-      <li><span class="num">4</span> <strong>Accountability statement.</strong> Who approves what, on what evidence.</li>
-      <li><span class="num">5</span> <strong>AI-use log</strong>, with the transcripts for every merged feature.</li>
-    </ul>
-  </div>
-
-  <p>The software is half of it. The evidence that it works is the other half, and it is marked as such.</p>
+  <p>A working system and documented engineering evidence: a specification with acceptance criteria, a test adequacy argument, a review and evaluation record, an accountability statement, and an AI-use log.</p>
 
   <p class="policy">Use whatever tools you like. Document what you used. Never submit anything you cannot explain.</p>
 

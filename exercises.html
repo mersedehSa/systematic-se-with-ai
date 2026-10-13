@@ -3,118 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercises &middot; Systematically Developing Software with AI</title>
+<title>Exercises | Systematically Developing Software with AI</title>
 <meta name="description" content="The weekly exercises, weeks 1 to 13: what to do, what to submit, and which milestone each one feeds.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-head">
-  <div class="wrap">
-    <h1 class="site-title"><a href="index.html">Systematically Developing Software with AI</a></h1>
-    <p class="site-sub">Bachelor Computer Science &middot; 3rd semester &middot; 14 weeks &middot; lecture and exercise</p>
+  <div class="head-card">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
+      <span class="brand-text">Systematically Developing<br>Software with AI</span>
+    </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="week5.html">Week 5</a></li>
         <li><a href="exercises.html" aria-current="page">Exercises</a></li>
         <li><a href="project.html">Project</a></li>
-        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Exercises</span>
+    <h1>One each week, due before the next</h1>
+  </div>
+</div>
+
+<nav class="wrap crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Course</a><span>&rsaquo;</span>Exercises
+</nav>
+
 <main>
 <div class="wrap">
 
-  <h1><span class="eyebrow">Exercises</span>One each week, due before the next</h1>
 
-  <p class="lede">Every exercise is written against your own project's next feature, so the five project options do not change what is asked. Every exercise delivers an artifact and a short justification of the design. From week 10 on, it also delivers the evidence for it. Keep your transcripts.</p>
+  <p class="lede">Every exercise works on your own project and delivers an artifact with a short justification. Briefs are published in the week they are set; exercise 5 is shown in full.</p>
 
-  <div class="entry">
-    <h3><span class="wkno">1</span>Toolchain and first user stories</h3>
-    <p>Set up the group's repository, a CI pipeline, an AI-assisted IDE and a coding agent. Choose your project from the menu. Then write the project's first five user stories with acceptance criteria, by hand.</p>
-    <p class="meta"><strong>Submit</strong> repository link with CI running &middot; five user stories with acceptance criteria. <strong>Feeds</strong> M0.</p>
+  <table>
+    <caption>Exercises by week.</caption>
+    <thead>
+      <tr><th scope="col">Week</th><th scope="col">Exercise</th><th scope="col">Due</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="wk" data-label="Week">1</td><td data-label="Exercise">Exercise 1</td><td data-label="Due">before week 2</td></tr>
+      <tr><td class="wk" data-label="Week">2</td><td data-label="Exercise">Exercise 2</td><td data-label="Due">before week 3</td></tr>
+      <tr><td class="wk" data-label="Week">3</td><td data-label="Exercise">Exercise 3</td><td data-label="Due">before week 4</td></tr>
+      <tr><td class="wk" data-label="Week">4</td><td data-label="Exercise">Exercise 4</td><td data-label="Due">before week 5</td></tr>
+      <tr class="here"><td class="wk" data-label="Week">5</td><td data-label="Exercise"><a href="#ex5"><strong>Exercise 5: Choose and apply an agentic workflow pattern</strong></a></td><td data-label="Due">before week 6</td></tr>
+      <tr><td class="wk" data-label="Week">6</td><td data-label="Exercise">Exercise 6</td><td data-label="Due">before week 7</td></tr>
+      <tr><td class="wk" data-label="Week">7</td><td data-label="Exercise">Exercise 7</td><td data-label="Due">before week 8</td></tr>
+      <tr><td class="wk" data-label="Week">8</td><td data-label="Exercise">Exercise 8</td><td data-label="Due">before week 9</td></tr>
+      <tr><td class="wk" data-label="Week">9</td><td data-label="Exercise">Exercise 9</td><td data-label="Due">before week 10</td></tr>
+      <tr><td class="wk" data-label="Week">10</td><td data-label="Exercise">Exercise 10</td><td data-label="Due">before week 11</td></tr>
+      <tr><td class="wk" data-label="Week">11</td><td data-label="Exercise">Exercise 11</td><td data-label="Due">before week 12</td></tr>
+      <tr><td class="wk" data-label="Week">12</td><td data-label="Exercise">Exercise 12</td><td data-label="Due">before week 13</td></tr>
+      <tr><td class="wk" data-label="Week">13</td><td data-label="Exercise">Exercise 13</td><td data-label="Due">before week 14</td></tr>
+      <tr><td class="wk" data-label="Week">14</td><td data-label="Exercise">Presentation and reflection</td><td data-label="Due">week 14</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="ex5">Exercise 5: Choose and apply an agentic workflow pattern</h2>
+
+  <p>In your project group. Due before week 6. About three hours; a starter script with one model call and one tool call is provided.</p>
+
+  <h3>Part A: Recognise and compare patterns</h3>
+
+  <p>For each scenario, choose a workflow pattern and justify it. Name one alternative and the trade-off. Say first whether a simpler, non-agentic solution would do; "no pattern needed" is a valid answer if you can argue it.</p>
+
+  <ol>
+    <li>About fifty bug reports arrive in a week, some about the user interface, some about the database, some about performance. The team wants one prioritised report.</li>
+    <li>A feature needs a change to the data model, the API, and two screens, and the parts depend on each other.</li>
+  </ol>
+
+  <h3>Part B: Design a workflow for your project</h3>
+
+  <p>Pick one task from your project and one of the five patterns. Explain why it fits, why you prefer it to one alternative, which components take part (LLM calls, agents, tools, deterministic checks, human decisions), and how you know the workflow is finished. Draw a simple diagram. Do not add agents the task does not need.</p>
+
+  <h3>Part C: Prototype and reflect</h3>
+
+  <p>Build a minimal demonstration with an AI tool, a short script, or a framework. Run it on one real example from your project and save the trace. Note what worked, what did not, and whether the pattern was the right choice.</p>
+
+  <div class="box box-quiet">
+    <p><strong>Submit</strong> diagram, trace or screenshots, half-page justification.</p>
+    <p><strong>Before next week:</strong> when is one agent enough, and when might several specialized agents help?</p>
+    <p><strong>Reading</strong>: Anthropic, <a href="https://www.anthropic.com/research/building-effective-agents">Building effective agents</a> (2024). Optional: Shinn et al., <a href="https://arxiv.org/abs/2303.11366">Reflexion</a> (NeurIPS 2023).</p>
   </div>
-
-  <div class="entry">
-    <h3><span class="wkno">2</span>One story, three models</h3>
-    <p>Give the same user story to three different models. Compare the three implementations against your own acceptance criteria, not against each other.</p>
-    <p class="meta"><strong>Submit</strong> the three implementations &middot; a comparison against the criteria. <strong>Feeds</strong> M0, stories reviewed.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">3</span>Your project's agent configuration</h3>
-    <p>Write the agent configuration for your repository: conventions, how to build, how to test, and what the agent may not touch. Then measure the same task with the configuration and without it.</p>
-    <p class="meta"><strong>Submit</strong> the configuration file &middot; the before and after measurement. <strong>Feeds</strong> M1.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">4</span>One feature with a coding agent</h3>
-    <p>Implement one small feature with a coding agent. Keep the full transcript. Mark every point where the agent claimed to be finished, and say whether it was.</p>
-    <p class="meta"><strong>Submit</strong> the merged feature &middot; the full transcript with the claims marked. <strong>Feeds</strong> M1.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">5</span>Choose and apply an agentic workflow pattern</h3>
-    <p>Match five given tasks to patterns, design a workflow for one task from your own project, and build a small prototype of it. The full brief is on the <a href="week5.html">week 5 page</a>.</p>
-    <p class="meta"><strong>Submit</strong> workflow diagram &middot; short implementation or execution trace &middot; half-page justification. <strong>Feeds</strong> M2.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">6</span>Specialized agents and explicit coordination</h3>
-    <p>Extend your week 5 workflow with specialized agents and explicit coordination. Make it clear who decides, who checks, and who stops the loop.</p>
-    <p class="meta"><strong>Submit</strong> the extended workflow &middot; the review record. <strong>Feeds</strong> M2.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">7</span>A ten-case evaluation</h3>
-    <p>Build a ten-case evaluation for your workflow. Run it three times. Report the pass rate and the variance across runs. Then name one failure the evaluation did not catch.</p>
-    <p class="meta"><strong>Submit</strong> the ten cases &middot; three runs with pass rate and variance &middot; the missed failure. <strong>Feeds</strong> M2.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">8</span>Elicitation, twice</h3>
-    <p>Have an agent elicit the requirements for your next feature from a persona. Then interview a real classmate about the same feature. Diff the two results and account for the differences.</p>
-    <p class="meta"><strong>Submit</strong> both requirement sets &middot; the diff, with your reading of it. <strong>Feeds</strong> M3.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">9</span>Two designs, one ADR</h3>
-    <p>Have an agent propose two designs. Write the architecture decision record choosing one, giving the rationale the agent did not state. Then implement against the ADR.</p>
-    <p class="meta"><strong>Submit</strong> the two proposals &middot; the ADR &middot; the implementation. <strong>Feeds</strong> M3.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">10</span>Criteria, tests, and what is missing</h3>
-    <p>For each acceptance criterion of one feature, name the test that covers it. Report the criteria with no test. Then generate a second test suite from the criteria rather than from the code, and compare its coverage and mutation score with the agent's code-derived suite.</p>
-    <p class="meta"><strong>Submit</strong> the criteria-to-test mapping &middot; both suites &middot; the comparison. <strong>Feeds</strong> M3, the test adequacy argument.</p>
-    <div class="box box-quiet">
-      <p>A worked example of the mapping, <strong>All tests pass</strong>, is handed out in the exercise session. It is the in-class activity from week 5, scaled up and applied to your own code.</p>
-    </div>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">11</span>Verify someone else's patch</h3>
-    <p>Take a bug report from another group's system. Let the agent propose a patch. Verify the patch against the acceptance criteria, not against the tests the patch brought with it.</p>
-    <p class="meta"><strong>Submit</strong> the patch &middot; your verification against the criteria. <strong>Feeds</strong> the final submission.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">12</span>Security triage</h3>
-    <p>Run static analysis and dependency checks on your repository. Triage what comes back. Find one fabricated or outdated dependency the agent introduced, if there is one, and say how it got in.</p>
-    <p class="meta"><strong>Submit</strong> the triaged findings &middot; the dependency finding, or a statement that there was none. <strong>Feeds</strong> the final submission.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">13</span>The accountability statement</h3>
-    <p>Write your project's accountability statement: who approves what, on what evidence. The reference point is clause 1.03 of the <a href="resources.html">Software Engineering Code of Ethics</a>, which makes approval conditional on a well-founded belief.</p>
-    <p class="meta"><strong>Submit</strong> the accountability statement, with the final submission. <strong>Feeds</strong> the final submission.</p>
-  </div>
-
-  <p>Week 14 has no exercise. Groups present their system and the evidence behind it, and each student writes an individual reflection.</p>
 
 </div>
 </main>

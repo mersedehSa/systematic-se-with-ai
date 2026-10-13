@@ -4,43 +4,128 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Systematically Developing Software with AI</title>
-<meta name="description" content="Illustrative course concept: Systematically Developing Software with AI. Bachelor Computer Science, 3rd semester, 14 weeks.">
+<meta name="description" content="Illustrative course concept: Systematically Developing Software with AI. Bachelor Computer Science, 3rd semester, 14 weeks, two lectures per week.">
 <link rel="stylesheet" href="style.css">
+<style>
+.fig-seai{margin:1.5rem 0 1rem;padding:1rem 1rem .5rem;background:#EFF4F7;border-radius:6px}
+.fig-seai svg{display:block;width:100%;height:auto;max-width:720px;margin:0 auto}
+.fig-seai figcaption{font-size:.85rem;color:#8C8C8C;margin-top:.6rem;line-height:1.4}
+</style>
 </head>
 <body>
 
 <header class="site-head">
-  <div class="wrap">
-    <h1 class="site-title"><a href="index.html">Systematically Developing Software with AI</a></h1>
-    <p class="site-sub">Bachelor Computer Science &middot; 3rd semester &middot; 14 weeks &middot; lecture and exercise</p>
+  <div class="head-card">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
+      <span class="brand-text">Systematically Developing<br>Software with AI</span>
+    </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="index.html" aria-current="page">Overview</a></li>
         <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="week5.html">Week 5</a></li>
         <li><a href="exercises.html">Exercises</a></li>
         <li><a href="project.html">Project</a></li>
-        <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Course overview</span>
+    <h1>How software engineering changes when AI takes part in it</h1>
+  </div>
+</div>
+
+<nav class="wrap crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Course</a><span>&rsaquo;</span>Overview
+</nav>
+
 <main>
 <div class="wrap">
 
-  <h1><span class="eyebrow">Course overview</span>Software engineering across the lifecycle, with AI agents as participants</h1>
 
-  <p class="lede">The course treats AI agents as participants in software engineering activities rather than as a tool for isolated tasks. Each week takes a part of the lifecycle and asks two questions: what can an agent contribute here, and what evidence do we need before we accept what it produced. The goal is to systematically engineer software with AI.</p>
+  <p class="lede">Generative AI, large language models and AI agents now take part in every activity of the software lifecycle, from eliciting requirements to writing, testing, reviewing and maintaining code. This course asks what that does to software engineering: which methods and tools are new, which established practices still carry the weight, and how an engineer stays accountable for software that AI helped produce. Students learn the fundamentals of software engineering first, then how modern AI tools work, then how to apply both together across the lifecycle. The goal is to systematically engineer software with AI.</p>
+
+
+  <figure class="fig-seai">
+    <svg viewBox="0 0 720 230" role="img" aria-labelledby="seai-title" xmlns="http://www.w3.org/2000/svg">
+      <title id="seai-title">Three kinds of collaboration in software engineering with AI: human with human, human with agent, agent with agent</title>
+      <defs>
+        <g id="human">
+          <circle cx="0" cy="-22" r="12" fill="#005176"/>
+          <path d="M-22 22 Q-22 -2 0 -2 Q22 -2 22 22 Z" fill="#005176"/>
+        </g>
+        <g id="agent">
+          <rect x="-20" y="-24" width="40" height="30" rx="6" fill="#00A1C0"/>
+          <circle cx="-8" cy="-10" r="4" fill="#fff"/><circle cx="8" cy="-10" r="4" fill="#fff"/>
+          <rect x="-14" y="8" width="28" height="14" rx="4" fill="#00A1C0"/>
+          <line x1="0" y1="-24" x2="0" y2="-32" stroke="#00A1C0" stroke-width="3"/><circle cx="0" cy="-34" r="3" fill="#00A1C0"/>
+        </g>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 Z" fill="#33383D"/>
+        </marker>
+      </defs>
+      <g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#33383D">
+        <! H-H >
+        <use href="#human" x="70" y="80"/><use href="#human" x="190" y="80"/>
+        <line x1="100" y1="80" x2="160" y2="80" stroke="#33383D" stroke-width="2.5" marker-start="url(#ah)" marker-end="url(#ah)"/>
+        <text x="130" y="140" text-anchor="middle" font-weight="bold" fill="#005176">Human and human</text>
+        <text x="130" y="162" text-anchor="middle" fill="#8C8C8C">teams, review, hand-over</text>
+        <! H-A >
+        <use href="#human" x="310" y="80"/><use href="#agent" x="430" y="80"/>
+        <line x1="340" y1="80" x2="402" y2="80" stroke="#33383D" stroke-width="2.5" marker-start="url(#ah)" marker-end="url(#ah)"/>
+        <text x="370" y="140" text-anchor="middle" font-weight="bold" fill="#005176">Human and agent</text>
+        <text x="370" y="162" text-anchor="middle" fill="#8C8C8C">delegation, oversight, acceptance</text>
+        <! A-A >
+        <use href="#agent" x="550" y="80"/><use href="#agent" x="670" y="80"/>
+        <line x1="578" y1="80" x2="642" y2="80" stroke="#33383D" stroke-width="2.5" marker-start="url(#ah)" marker-end="url(#ah)"/>
+        <text x="610" y="140" text-anchor="middle" font-weight="bold" fill="#005176">Agent and agent</text>
+        <text x="610" y="162" text-anchor="middle" fill="#8C8C8C">workflows, coordination, checks</text>
+        <text x="360" y="212" text-anchor="middle" font-size="17" font-weight="bold" fill="#33383D">How do we engineer software when humans and AI agents work together?</text>
+      </g>
+    </svg>
+    <figcaption>Adapted from the "symbiotic workforce" vision in David Lo, <a href="https://doi.org/10.1109/ICSE-FoSE59343.2023.00010">Trustworthy and Synergistic Artificial Intelligence for Software Engineering: Vision and Roadmaps</a>, ICSE-FoSE 2023. Redrawn; the three relationships are his, the wording under them is ours.</figcaption>
+  </figure>
 
   <div class="box box-flag">
     <p><strong>Illustrative course concept, prepared for a university teaching demonstration, October 2026.</strong> This is a worked proposal for how such a module could be structured. It is not an offering, and no enrolment, submission or examination system stands behind it.</p>
   </div>
 
-  <h2>Format and prerequisites</h2>
+  <h2>Find your way around</h2>
+
+  <div class="cards">
+    <a class="card" href="schedule.html">
+      <div class="card-panel"></div>
+      <div class="card-body">
+        <h3>Schedule</h3>
+        <p>The fourteen weeks by block, two lectures and one exercise each.</p>
+        <span class="card-go" aria-hidden="true">&rarr;</span>
+      </div>
+    </a>
+    <a class="card" href="exercises.html">
+      <div class="card-panel"></div>
+      <div class="card-body">
+        <h3>Exercises</h3>
+        <p>One per week; exercise 5 in full.</p>
+        <span class="card-go" aria-hidden="true">&rarr;</span>
+      </div>
+    </a>
+    <a class="card" href="project.html">
+      <div class="card-panel"></div>
+      <div class="card-body">
+        <h3>Semester project</h3>
+        <p>Two systems to choose from, and the deliverable.</p>
+        <span class="card-go" aria-hidden="true">&rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <h2>Course organisation and assessment</h2>
 
   <table>
-    <caption>Course frame</caption>
+    <caption>Course organisation</caption>
     <tbody>
       <tr>
         <td data-label="Item"><span class="label">Level</span></td>
@@ -48,47 +133,48 @@
       </tr>
       <tr>
         <td data-label="Item"><span class="label">Credits and format</span></td>
-        <td data-label="Detail">9 ECTS &middot; 2 SWS lecture + 2 SWS exercise &middot; 14 weeks</td>
+        <td data-label="Detail">9 KP, 4 SWS lecture + 2 SWS exercise, 14 weeks, two lectures and one exercise per week</td>
       </tr>
       <tr>
         <td data-label="Item"><span class="label">Prerequisite</span></td>
-        <td data-label="Detail">Introductory software engineering: the lifecycle and process models, requirements basics, testing fundamentals, verification and validation, CI/CD. One programming language, and Git.</td>
+        <td data-label="Detail">One programming language, and Git. The software engineering fundamentals the course relies on (processes, requirements, design, testing, review) are taught in Block I, weeks 1 to 3.</td>
       </tr>
       <tr>
         <td data-label="Item"><span class="label">Assessment</span></td>
-        <td data-label="Detail">Semester group project 50&nbsp;% &middot; weekly exercises 30&nbsp;% &middot; final reflection and presentation 20&nbsp;%</td>
+        <td data-label="Detail">Portfolio: semester project 50&nbsp;%, weekly exercises 30&nbsp;%, final presentation and reflection 20&nbsp;%</td>
       </tr>
     </tbody>
   </table>
 
-  <p>The lecture uses the prerequisite vocabulary rather than teaching it, and shows where it runs out when an agent writes both the software and the tests for it.</p>
+  <p>Four blocks across 14 weeks, two lectures per week: <strong>Software engineering fundamentals</strong> (weeks 1 to 3), <strong>LLMs and agents</strong> (weeks 4 to 6), <strong>AI across the software engineering lifecycle</strong> (weeks 7 to 12), and <strong>Judgement and synthesis</strong> (weeks 13 and 14). The first block establishes the engineering foundation of the project without AI; the second introduces language models, agents and agentic workflows; the third walks the lifecycle phase by phase with agents as participants; the fourth asks what the engineer is accountable for. See the <a href="schedule.html">schedule</a>, the <a href="exercises.html">weekly exercises</a> and the <a href="project.html">semester project</a>.</p>
 
-  <h2>What you look at over the semester</h2>
+  <p>Teams of three or four choose one of two systems in week 1 and develop it throughout the semester: conventionally in Block I, with AI agents from week 4. The deliverable is a working system and documented engineering evidence.</p>
 
-  <p>By the end of the course you can:</p>
+  <h2>Learning objectives</h2>
+
+  <p>By the end of the course, students can:</p>
 
   <ul>
-    <li>explain how AI agents participate in software engineering activities;</li>
-    <li>describe how agentic work can be organised as a process with explicit checks and termination;</li>
-    <li>assess whether an AI-produced artifact has been adequately verified, and name what is missing;</li>
-    <li>apply established software engineering practice to AI-produced output.</li>
+    <li>explain the fundamentals of software engineering: processes, requirements, design, testing, review and maintenance, and why each of these activities exists;</li>
+    <li>explain how generative AI, large language models and AI agents work, what they can and cannot do reliably, and how they are used in software development today;</li>
+    <li>describe how AI changes software engineering methods and tools across the lifecycle, and select suitable AI-assisted workflows, agent frameworks and tools for a given engineering task;</li>
+    <li>evaluate AI-produced artifacts against appropriate criteria and credible evidence, and name what is missing before accepting them;</li>
+    <li>work responsibly with AI: document its use, judge the quality and security risks, and take accountability for software developed with it.</li>
   </ul>
 
-  <p>The third one is the spine of the course. Most weeks end by asking it about something an agent just produced.</p>
+  <p>The fourth objective runs through the whole course. Most weeks end by asking it about something an AI tool just produced.</p>
 
-  <h2>How the semester is organised</h2>
+  <h2>Why this course</h2>
 
-  <p>Four blocks across 14 weeks: <strong>Foundations</strong> (weeks 1 to 3), <strong>Agents</strong> (weeks 4 and 5), <strong>Agentic software engineering across the lifecycle</strong> (weeks 6 to 11), and <strong>Judgement and synthesis</strong> (weeks 12 to 14). Groups of three or four choose one of five systems in week 1 and build it with agents all semester, delivering the evidence alongside the software. See the <a href="schedule.html">schedule</a>, the <a href="exercises.html">weekly exercises</a> and the <a href="project.html">semester project</a>.</p>
+  <p>Research on generative AI in software engineering has grown quickly and unevenly. A recent research agenda (<a href="https://doi.org/10.1002/spe.70005">Nguyen-Duc et al., Software: Practice and Experience, 2025</a>) finds that generative AI can support partial automation and decision-making in all software development activities, while research so far concentrates on implementation, quality assurance and maintenance, and names dependability, accuracy and transparency as the common concerns. Surveys from industry and academia (<a href="https://doi.org/10.1109/ICSE-FoSE59343.2023.00008">Fan et al., ICSE-FoSE 2023</a>) argue that the open problem is not generating code but reliably weeding out incorrect results, and that the way forward combines established software engineering techniques with language models. Vision papers for the field (<a href="https://doi.org/10.1109/ICSE-FoSE59343.2023.00010">Lo, ICSE-FoSE 2023</a>) frame the goal as AI for software engineering that is trustworthy enough to delegate to and synergistic with the engineer rather than a replacement. This course is built on that view: engineering fundamentals first, AI tools second, and the two together across the lifecycle.</p>
 
-  <h2>Using AI in this course</h2>
+  <h2>Materials</h2>
 
-  <p class="policy">Use whatever tools you like. Document what you used. Never submit anything you cannot explain.</p>
-
-  <p>Transcripts are part of the deliverable, not an afterthought. The final submission includes an AI-use log with transcripts for every merged feature, and a statement of who approves what, on what evidence.</p>
+  <p>This website holds the schedule, the exercises, the project description and the resources. Announcements, submissions and discussion run through the university's learning platform.</p>
 
   <h2>Refresh your knowledge</h2>
 
-  <p>The course assumes the material below. All of it is open and free to read.</p>
+  <p>Block I teaches the fundamentals in class. If you want to read ahead, or come back to a topic later, the material below is open and free to read.</p>
 
   <div class="box box-quiet">
     <h3>The software lifecycle and process models</h3>
