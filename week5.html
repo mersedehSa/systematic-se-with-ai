@@ -30,7 +30,7 @@
 
 <div class="hero">
   <div class="wrap hero-inner">
-    <span class="eyebrow">Week 5 &middot; Block II, Agents</span>
+    <span class="eyebrow">Week 5 &middot; Lecture 2 of 2 &middot; Block II</span>
     <h1>Engineering Agentic Workflows: Patterns, Processes, and Quality</h1>
   </div>
 </div>
@@ -42,7 +42,7 @@
 <main>
 <div class="wrap">
 
-  <p class="lede">Software testing principles remain essential, but AI changes how software is produced, the verification challenges we face, and the testing activities we can automate. This week organises agentic work as a process: what the patterns are, how to choose one, and why the check inside a loop needs criteria somebody wrote down.</p>
+  <p class="lede">The last lecture covered the single agent: the loop, tools, memory, skills and MCP. This one organises agentic work as a process: what the patterns are, how to choose one, and why the check inside a loop needs criteria somebody wrote down. The next lecture, in week 6, is multi-agent systems.</p>
 
   <h2>Learning objectives</h2>
 
@@ -67,36 +67,38 @@
 
   <h2>Exercise 5 &middot; Choose and apply an agentic workflow pattern</h2>
 
-  <p>Three parts. Work in your project group.</p>
+  <p>Work in your project group of three or four. Due before week 6. Plan for roughly three hours of group time. A starter script that makes one model call and one tool call is provided with the exercise, so that your time goes into the design rather than into API setup.</p>
 
-  <h3>Part A &middot; Match the task to a pattern</h3>
+  <h3>Part A &middot; Recognise and compare patterns</h3>
 
-  <p>Five software engineering tasks are given. For each one, say which pattern fits and why. More than one answer can be right, so the justification is what counts.</p>
+  <p>For each of the five scenarios below, say which workflow pattern you would use and why. More than one answer can be reasonable. For at least two scenarios, name an alternative and explain the trade-off. Consider first whether a simpler, non-agentic solution would do: <strong>"no agentic workflow pattern is needed" is an acceptable answer when you justify it.</strong></p>
 
-  <ul>
-    <li>Analyse an issue and produce a structured report.</li>
-    <li>Classify incoming bug reports.</li>
-    <li>Analyse several independent modules.</li>
-    <li>Coordinate a change across files and components.</li>
-    <li>Generate, review and improve a solution.</li>
-  </ul>
+  <ol>
+    <li>About fifty bug reports in a week, spread over the UI, the database layer and performance. The team wants them analysed efficiently and turned into one prioritised report.</li>
+    <li>A pull request touches a single function of twelve lines. The author wants a second opinion before merging.</li>
+    <li>A feature needs a change to the data model, the API and two UI screens, and the parts depend on each other.</li>
+    <li>Library documentation has to be checked module by module for examples that no longer compile.</li>
+    <li>A function must be generated from a specification with six acceptance criteria, and satisfy all six before anyone looks at it.</li>
+  </ol>
 
-  <h3>Part B &middot; Design a workflow for your own project</h3>
+  <h3>Part B &middot; Design a workflow for your project</h3>
 
-  <p>Pick one task from your project. Describe its characteristics. Choose one of the five patterns and justify the choice against the "use it when" criteria from the lecture. Then sketch the workflow, naming the roles of the LLMs, the agents, the tools and the people in it.</p>
+  <p>Take one concrete task from the semester project and choose one of the five patterns for it. Explain why it fits, and why you prefer it to at least one alternative. Say which components take part: LLM calls, agents, tools, deterministic checks and human decisions. Say how information moves between them, and how the workflow decides it is finished. Include a simple diagram.</p>
 
-  <h3>Part C &middot; Build a small prototype</h3>
+  <p>One guard: do not add agents the task does not need.</p>
 
-  <p>Implement the workflow, small, in whatever environment you prefer. Document what worked, what did not, and whether the pattern turned out to be the right one.</p>
+  <h3>Part C &middot; Prototype and reflect</h3>
+
+  <p>Build a minimal working demonstration, with an AI tool, a short script or an existing framework, on one realistic example from your project. Save the execution trace with the intermediate outputs and decisions. Then discuss what worked, what did not, and whether the pattern was the right choice. <strong>"More than the task needed" is a valid conclusion.</strong></p>
 
   <div class="box">
     <h3>What to submit</h3>
     <ul class="plain">
       <li><span class="num">1</span> A workflow diagram.</li>
-      <li><span class="num">2</span> A short implementation or an execution trace.</li>
-      <li><span class="num">3</span> A half-page justification of the design decisions.</li>
+      <li><span class="num">2</span> An execution trace, or screenshots.</li>
+      <li><span class="num">3</span> A half-page design justification covering Parts A and B.</li>
     </ul>
-    <p class="meta"><strong>Due</strong> before week 6. <strong>Feeds</strong> milestone M2 in week 7.</p>
+    <p class="meta"><strong>Due</strong> before week 6. <strong>Next</strong> the week 6 exercise builds a real feature with the pattern you chose here, which feeds milestone M2.</p>
   </div>
 
   <div class="box box-quiet">
@@ -112,16 +114,11 @@
   </div>
 
   <div class="ref">
-    <p><a href="https://arxiv.org/abs/2404.04834">LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision and the Road Ahead</a></p>
-    <p class="venue">He, Treude and Lo. ACM Transactions on Software Engineering and Methodology, 2025. Sections 1 and 2.</p>
-  </div>
-
-  <div class="ref">
     <p><a href="https://arxiv.org/abs/2303.11366">Reflexion: Language Agents with Verbal Reinforcement Learning</a> <span class="venue">(optional)</span></p>
     <p class="venue">Shinn, Cassano, Berman, Gopinath, Narasimhan and Yao. NeurIPS 2023. Read the programming section, and note who writes the tests.</p>
   </div>
 
-  <p>The full register is on the <a href="resources.html">resources page</a>.</p>
+  <p>The multi-agent literature review comes with week 6. The full register is on the <a href="resources.html">resources page</a>.</p>
 
 </div>
 </main>
