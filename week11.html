@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 11b &middot; Engineering Agentic Workflows</title>
+<meta name="description" content="Week 11b: Engineering agentic workflows, in the unit Systematically Developing Software with AI.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="head-card">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
+      <span class="brand-text">Software<br>Engineering</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="week11.html" aria-current="page">Week 11b</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Week 11b &middot; Systematically Developing Software with AI</span>
+    <h1>Engineering Agentic Workflows</h1>
+  </div>
+</div>
+
+<nav class="wrap crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Course</a><span>&rsaquo;</span>Week 11b
+</nav>
+
+<main>
+<div class="wrap">
+  <p class="lede">Last lecture, week 11a, covered the single agent: tools, memory and context. This one organises agentic work as a process: how agents collaborate, what the common workflow patterns are, how to choose between them, and why the check inside a loop needs criteria somebody wrote down. It closes with a software testing case study on evaluating AI-generated results. Next week takes the same question across the whole lifecycle.</p>
+
+  <div class="box box-quiet">
+    <p><span class="label">Teaching unit</span><br>Weeks 9 to 12 form one unit, <strong>Systematically Developing Software with AI</strong>. Week 11a is AI agents: tools, memory and context. Week 11b is this lecture. Week 12 is AI across the software engineering lifecycle.</p>
+  </div>
+
+  <h2>Learning objectives</h2>
+
+  <p>By the end of this week you can:</p>
+
+  <ul>
+    <li>recognise the common agentic workflow patterns and say how they differ;</li>
+    <li>select a suitable pattern for a software engineering task and apply it;</li>
+    <li>explain why evaluation inside a workflow needs explicit criteria, and what goes wrong without them.</li>
+  </ul>
+
+  <h2>Lecture outline</h2>
+
+  <ol>
+    <li>One agent, and then several: how agents collaborate.</li>
+    <li>Workflow or autonomous agent: what the choice actually commits you to.</li>
+    <li>Five common patterns, and how to choose between them.</li>
+    <li>Evaluator and optimizer in depth: the loop, a trace, four engineering decisions, and independence.</li>
+    <li>Where agents sit in the lifecycle.</li>
+    <li>Systematic evaluation of AI-generated results, through a software testing case study. You met testing properly in weeks 5 and 6; week 12 returns to it across the lifecycle.</li>
+  </ol>
+
+  <h2>Exercise 11 &middot; Choose and apply an agentic workflow pattern</h2>
+
+  <p>Work in your project team of three or four. Due before week 12. Plan for roughly three hours of team time. A starter script that makes one model call and one tool call is provided with the exercise, so that your time goes into the design rather than into API setup.</p>
+
+  <h3>Part A &middot; Recognise and compare patterns</h3>
+
+  <p>For each of the five scenarios below, say which workflow pattern you would use and why. More than one answer can be reasonable. For at least two scenarios, name an alternative and explain the trade-off. Consider first whether a simpler, non-agentic solution would do: <strong>"no agentic workflow pattern is needed" is an acceptable answer when you justify it.</strong></p>
+
+  <ol>
+    <li>About fifty bug reports in a week, spread over the UI, the database layer and performance. The team wants them analysed efficiently and turned into one prioritised report.</li>
+    <li>A pull request touches a single function of twelve lines. The author wants a second opinion before merging.</li>
+    <li>A feature needs a change to the data model, the API and two UI screens, and the parts depend on each other.</li>
+    <li>Library documentation has to be checked module by module for examples that no longer compile.</li>
+    <li>A function must be generated from a specification with six acceptance criteria, and satisfy all six before anyone looks at it.</li>
+  </ol>
+
+  <h3>Part B &middot; Design a workflow for your project</h3>
+
+  <p>Take one concrete task from the semester project and choose one of the five patterns for it. Explain why it fits, and why you prefer it to at least one alternative. Say which components take part: LLM calls, agents, tools, deterministic checks and human decisions. Say how information moves between them, and how the workflow decides it is finished. Include a simple diagram.</p>
+
+  <p>One guard: do not add agents the task does not need.</p>
+
+  <h3>Part C &middot; Apply it, and evaluate what comes out</h3>
+
+  <p>Build a minimal working demonstration on one realistic example from your project. Save the execution trace with the intermediate outputs and decisions. Then evaluate the resulting artefacts critically: what worked, what did not, and whether the pattern was the right choice. <strong>"More than the task needed" is a valid conclusion.</strong></p>
+
+  <div class="box">
+    <h3>What to submit</h3>
+    <ul class="plain">
+      <li><span class="num">1</span> A workflow diagram.</li>
+      <li><span class="num">2</span> An execution trace, or screenshots.</li>
+      <li><span class="num">3</span> A half-page design justification covering Parts A and B, with your evaluation of the artefacts.</li>
+    </ul>
+    <p class="meta"><strong>Due</strong> before week 12. <strong>Feeds</strong> milestone M3.</p>
+  </div>
+
+  <div class="box box-quiet">
+    <h3>Before next week</h3>
+    <p>Think about this one, you do not have to write anything down: when is one agent enough, and when might several specialized agents be useful?</p>
+  </div>
+
+  <h2>Reading for this week</h2>
+
+  <div class="ref">
+    <p><a href="https://www.anthropic.com/research/building-effective-agents">Building effective agents</a></p>
+    <p class="venue">Anthropic, December 2024. The source for the patterns and for the "when to use this workflow" notes.</p>
+  </div>
+
+  <div class="ref">
+    <p><a href="https://arxiv.org/abs/2303.11366">Reflexion: Language Agents with Verbal Reinforcement Learning</a> <span class="venue">(optional)</span></p>
+    <p class="venue">Shinn, Cassano, Berman, Gopinath, Narasimhan and Yao. NeurIPS 2023. Read the programming section, and note who writes the tests.</p>
+  </div>
+
+  <p>The full register is on the <a href="resources.html">resources page</a>.</p>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="honesty">Illustrative course concept, prepared for a university teaching demonstration, October 2026.</p>
+    <p>Prepared by Mersedeh Sadeghi. Content mirrors the course concept documents behind the demonstration.</p>
+  </div>
+</footer>
+
+</body>
+</html>

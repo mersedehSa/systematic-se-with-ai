@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exercises &middot; Systematically Developing Software with AI</title>
-<meta name="description" content="The weekly exercises, weeks 1 to 14: what to do, what to submit, and which milestone each one feeds.">
+<title>Exercises &middot; Software Engineering</title>
+<meta name="description" content="The exercise topic for each of the fourteen weeks, with the week 11 brief in full.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,13 +13,13 @@
   <div class="head-card">
     <a class="brand" href="index.html">
       <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#005176" stroke-width="3"/><path d="M17 1.5a15.5 15.5 0 0 1 15.5 15.5H17Z" fill="#00A1C0"/></svg>
-      <span class="brand-text">Systematically Developing<br>Software with AI</span>
+      <span class="brand-text">Software<br>Engineering</span>
     </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="index.html">Overview</a></li>
         <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="week5.html">Week 5</a></li>
+        <li><a href="week11.html">Week 11b</a></li>
         <li><a href="exercises.html" aria-current="page">Exercises</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="resources.html">Resources</a></li>
@@ -41,99 +41,88 @@
 
 <main>
 <div class="wrap">
+  <p class="lede">One exercise a week, each applied to your own semester project, so the methods are practised on a system you are actually building. From week 9 the same project is approached again with AI support, which is what makes the comparison honest: there is something real to compare against.</p>
 
-  <p class="lede">Every exercise is written against your own project, so the five project options do not change what is asked. Each one delivers an artifact and a short justification of the design. In Block I you build that foundation by conventional means; from week 4 the same project is developed with agents, and from then on you keep the transcripts.</p>
+  <div class="box box-quiet">
+    <p>The entries below are the planned exercise topics for each week. The detailed brief for an exercise, with its deliverables, is published in the week it is set. Week 11 is given in full because it accompanies the lecture shown in the teaching demonstration.</p>
+  </div>
 
-  <h2>Block I &middot; Software engineering fundamentals</h2>
+  <h2>Block I &middot; Software Engineering Foundations</h2>
 
   <div class="entry">
-    <h3><span class="wkno">1</span>Toolchain, project choice, first user stories</h3>
-    <p>Set up the group's repository and a CI pipeline. Choose your project from the menu. Then write the project's first user stories with acceptance criteria, by hand.</p>
-    <p class="meta"><strong>Submit</strong> repository link with CI running &middot; user stories with acceptance criteria. <strong>Feeds</strong> M0.</p>
+    <h3><span class="wkno">1</span>Software lifecycle and process selection</h3>
+    <p>Work through a development scenario and choose a process model that fits its constraints: team size, requirement volatility, risk and release cadence. Set up the team repository and choose the project.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">2</span>Specify one feature with acceptance criteria</h3>
-    <p>Take one feature of your project and specify it properly: what it must do, and the criteria by which anyone could later decide whether it does.</p>
-    <p class="meta"><strong>Submit</strong> the specification with its acceptance criteria. <strong>Feeds</strong> M1.</p>
+    <h3><span class="wkno">2</span>Requirements elicitation, specification and quality</h3>
+    <p>Elicit the requirements for your project and write them up, then assess them for quality: are they complete, unambiguous and testable?</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">3</span>Test one feature, and review a peer's</h3>
-    <p>Write tests for your feature from its acceptance criteria, not from the code. Then review another group's feature and say what their tests do not cover.</p>
-    <p class="meta"><strong>Submit</strong> the test suite with the criteria it maps to &middot; your review of the peer feature. <strong>Feeds</strong> M1.</p>
-  </div>
-
-  <h2>Block II &middot; LLMs and agents</h2>
-
-  <div class="entry">
-    <h3><span class="wkno">4</span>One story, three models</h3>
-    <p>Give the same user story to three different models. Compare the three implementations against your own acceptance criteria, not against each other.</p>
-    <p class="meta"><strong>Submit</strong> the three implementations &middot; a comparison against the criteria. <strong>Feeds</strong> M1.</p>
-  </div>
-
-  <div class="entry" id="ex5">
-    <h3><span class="wkno">5</span>Choose and apply an agentic workflow pattern</h3>
-    <p>Three parts: recognise and compare patterns across five scenarios, design a workflow for one task from your own project, then build a minimal prototype of it and say whether the pattern was right. The full brief is on the <a href="week5.html">week 5 page</a>.</p>
-    <p class="meta"><strong>Submit</strong> workflow diagram &middot; execution trace or screenshots &middot; half-page design justification. <strong>Due</strong> before week 6.</p>
+    <h3><span class="wkno">3</span>Architecture modelling and design decisions</h3>
+    <p>Model the architecture of your system and record the decisions behind it, with the alternatives you rejected and why.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">6</span>Build a feature with your pattern and specialized agents</h3>
-    <p>Build one real feature of your project with the workflow pattern you chose in week 5, this time using specialized agents with explicit coordination: who decides, who checks, who stops. Keep the full transcript.</p>
-    <p class="meta"><strong>Submit</strong> the merged feature &middot; the workflow as built &middot; the full transcript &middot; the review record. <strong>Feeds</strong> M2.</p>
+    <h3><span class="wkno">4</span>Implementation, refactoring and code quality</h3>
+    <p>Implement a feature against its acceptance criteria, refactor it, and review another team's code.</p>
   </div>
 
-  <h2>Block III &middot; AI across the software engineering lifecycle</h2>
+  <h2>Block II &middot; Software Quality and Evolution</h2>
 
   <div class="entry">
-    <h3><span class="wkno">7</span>Elicitation, twice, and one ADR</h3>
-    <p>Have an agent elicit the requirements for your next feature from a persona. Then interview a real classmate about the same feature and diff the two. Write the architecture decision record for the design you pick, giving the rationale the agent did not state.</p>
-    <p class="meta"><strong>Submit</strong> both requirement sets with the diff &middot; the ADR. <strong>Feeds</strong> M2.</p>
-  </div>
-
-  <div class="entry">
-    <h3><span class="wkno">8</span>Port your workflow to a framework</h3>
-    <p>Take the week 6 workflow and rebuild it on an orchestration framework or an agent SDK. Compare it with your hand-built version: what the framework gave you, what it cost, and whether a plain loop would have been enough.</p>
-    <p class="meta"><strong>Submit</strong> the ported workflow &middot; the comparison, with a recommendation. <strong>Feeds</strong> M3.</p>
+    <h3><span class="wkno">5</span>Test design</h3>
+    <p>Design tests from the specification using equivalence partitioning and boundary value analysis, and write them as unit tests.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">9</span>Security triage of your own code</h3>
-    <p>Run static analysis and dependency checks on your repository. Triage what comes back. Find one fabricated or outdated dependency the agent introduced, if there is one, and say how it got in.</p>
-    <p class="meta"><strong>Submit</strong> the triaged findings &middot; the dependency finding, or a statement that there was none. <strong>Feeds</strong> M3.</p>
+    <h3><span class="wkno">6</span>Verification, validation, reviews and coverage</h3>
+    <p>Review a peer artifact, measure coverage, and say what the coverage number does not tell you.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">10</span>Criteria, tests, and what is missing</h3>
-    <p>For each acceptance criterion of one feature, name the test that covers it. Report the criteria with no test. Then generate a second suite from the criteria rather than from the code, and compare its coverage and mutation score with the agent's code-derived suite.</p>
-    <p class="meta"><strong>Submit</strong> the criteria-to-test mapping &middot; both suites &middot; the comparison. <strong>Feeds</strong> M3, the test adequacy argument.</p>
+    <h3><span class="wkno">7</span>Maintenance tasks, bug fixing and impact analysis</h3>
+    <p>Take a change request against your system, analyse its impact, implement it, and show that nothing which previously worked has stopped working.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">11</span>Verify someone else's patch</h3>
-    <p>Take a bug report from another group's system. Let the agent propose a patch. Verify the patch against the acceptance criteria, not against the tests the patch brought with it.</p>
-    <p class="meta"><strong>Submit</strong> the patch &middot; your verification against the criteria. <strong>Feeds</strong> the final submission.</p>
+    <h3><span class="wkno">8</span>Version control, CI/CD and automated quality checks</h3>
+    <p>Put a pipeline on your repository that builds, tests and reports on every change, and make a failing check block it.</p>
+  </div>
+
+  <h2>Block III &middot; Systematically Developing Software with AI</h2>
+
+  <div class="entry">
+    <h3><span class="wkno">9</span>Identifying suitable ML and AI applications</h3>
+    <p>Find the software engineering tasks in your own project where machine learning or AI would genuinely help, and the ones where it would not.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">12</span>Threat model your agent setup</h3>
-    <p>Treat your own agent configuration as an attack surface. Where could a prompt injection enter, which tools could be misused, and what does your supply chain assume? Say what you would change.</p>
-    <p class="meta"><strong>Submit</strong> the threat model &middot; the mitigations you would apply. <strong>Feeds</strong> the final submission.</p>
+    <h3><span class="wkno">10</span>Prompt engineering and evaluating LLM output</h3>
+    <p>Produce software artefacts with an LLM and evaluate them: not whether they look right, but whether they meet the criteria you wrote earlier in the semester.</p>
   </div>
 
-  <h2>Block IV &middot; Judgement and synthesis</h2>
-
-  <div class="entry">
-    <h3><span class="wkno">13</span>The accountability statement</h3>
-    <p>Write your project's accountability statement: who approves what, on what evidence. The reference point is clause 1.03 of the <a href="resources.html">Software Engineering Code of Ethics</a>, which makes approval conditional on a well-founded belief.</p>
-    <p class="meta"><strong>Submit</strong> the accountability statement, with the final submission. <strong>Feeds</strong> the final submission.</p>
+  <div class="entry" id="ex11">
+    <h3><span class="wkno">11</span>Designing and applying an agentic workflow pattern</h3>
+    <p>Select a workflow pattern for a software engineering task, explain the choice, apply the workflow, and critically evaluate the resulting artefacts. The full brief is on the <a href="week11.html">week 11b page</a>.</p>
   </div>
 
   <div class="entry">
-    <h3><span class="wkno">14</span>Presentation and reflection</h3>
-    <p>Groups present the system and the engineering evidence behind it. Each student writes an individual reflection on what the semester changed about how they work.</p>
-    <p class="meta"><strong>Submit</strong> the group presentation &middot; an individual reflection. <strong>Counts as</strong> the final 20&nbsp;% of the portfolio.</p>
+    <h3><span class="wkno">12</span>Applying AI assistance across lifecycle activities</h3>
+    <p>Take the AI-assisted artifacts you have produced across requirements, design, code and tests, and name the evidence that each is adequate, and the criteria with none.</p>
+  </div>
+
+  <h2>Block IV &middot; Professional Practice and Integration</h2>
+
+  <div class="entry">
+    <h3><span class="wkno">13</span>Professional, ethical and accountability issues</h3>
+    <p>Evaluate the professional, ethical and accountability questions raised by AI-assisted development in your own project, and write the accountability statement. The reference point is clause 1.03 of the <a href="resources.html">Software Engineering Code of Ethics</a>.</p>
+  </div>
+
+  <div class="entry">
+    <h3><span class="wkno">14</span>Final demonstrations, presentations and reflection</h3>
+    <p>Teams demonstrate the system and the engineering evidence behind it. Each student writes an individual reflection.</p>
   </div>
 
 </div>
